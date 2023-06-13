@@ -1,0 +1,3 @@
+# Delete User
+DELETE http://localhost:3007/user/1
+Content-Type: application/json

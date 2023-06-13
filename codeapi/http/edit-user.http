@@ -1,0 +1,11 @@
+# Edit User
+PUT http://localhost:3007/user/1
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "name": "123456test"
+}
+
+
+
