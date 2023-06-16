@@ -34,14 +34,17 @@ const Register = () => {
 
         if(!isproceed){
             toast.warning(errormessage)
-        }else{
-            if(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)){
-
-            }else{
-                isproceed = false;
-                toast.warning('Please enter the valid email')
-            }
         }
+        // if(!isproceed){
+        //     toast.warning(errormessage)
+        // }else{
+        //     // if(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)){
+
+        //     // }else{
+        //         isproceed = false;
+        //         toast.warning('Please enter the valid email')
+        //    // }
+        // }
         return isproceed;
     }
 
@@ -95,7 +98,7 @@ const Register = () => {
                                 <div className="col-lg-6">
                                     <div className="form-group">
                                         <label>Email <span className="errmsg">*</span></label>
-                                        <input value={email} onChange={e => emailchange(e.target.value)} className="form-control"></input>
+                                        <input value={email} type="email" onChange={e => emailchange(e.target.value)} className="form-control"></input>
                                     </div>
                                 </div>
           
